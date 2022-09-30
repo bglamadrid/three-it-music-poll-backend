@@ -16,6 +16,7 @@ import javax.validation.constraints.NotBlank;
 @Table(name = "music_genres")
 public class JpaMusicGenre {
   @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "music_genre_id")
   private Long id;
   @NotBlank
