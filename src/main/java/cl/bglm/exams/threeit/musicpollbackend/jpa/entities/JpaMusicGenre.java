@@ -19,6 +19,6 @@ public class JpaMusicGenre {
   @Column(name = "music_genre_id")
   private Long id;
   @NotBlank
-  @Column(name = "music_genre_name", length = 40, unique = true)
+  @Column(name = "music_genre_name", length = 40, unique = true, nullable = false)
   private String name;
 }
