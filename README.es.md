@@ -19,6 +19,6 @@ Utiliza ***Maven v3.8*** y ***Spring Boot v2.7*** junto a las dependencias:
 
 ## Features
 - REST API
-- Modelo de datos simple con dos entidades:
+- Modelo de datos normalizado y simple con dos entidades:
   - Music Genre (Género de Música)
   - Poll Answer (Respuesta de Encuesta)

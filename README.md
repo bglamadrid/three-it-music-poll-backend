@@ -19,6 +19,6 @@ It uses ***Maven v3.8*** and ***Spring Boot v2.7*** along with dependencies:
 
 ## Features
 - REST API
-- Simple data model with two entities:
+- Simple normalized data model with two entities:
   - Music Genre
   - Poll Answer
