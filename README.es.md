@@ -13,12 +13,12 @@ Utiliza ***Maven v3.8*** y ***Spring Boot v2.7*** junto a las dependencias:
 - [Spring Validation](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#validation)
 - [H2 Database Driver](https://h2database.com/html/main.html)
 
-## Requirements
-- Java 19 o superior ([Download from Oracle Releases](https://jdk.java.net/19/))
-- Maven 3.6 o superior ([Download](https://maven.apache.org/download.cgi))
-
 ## Features
 - REST API
 - Modelo de datos normalizado y simple con dos entidades:
   - Music Genre (Género de Música)
   - Poll Answer (Respuesta de Encuesta)
+
+## Requirements
+- Java 19 o superior ([Download from Oracle Releases](https://jdk.java.net/19/))
+- Maven 3.6 o superior ([Download](https://maven.apache.org/download.cgi))
