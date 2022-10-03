@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * API controller for operations with poll answers.
+ */
 @RestController
 @RequestMapping("/v1/poll_answers")
 public class PollAnswersController {

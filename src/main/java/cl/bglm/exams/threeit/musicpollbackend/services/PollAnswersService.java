@@ -12,6 +12,10 @@ import javax.transaction.Transactional;
 import java.util.Optional;
 import java.util.stream.Stream;
 
+/**
+ * Main API logic service for operating with poll answers.
+ * Provides methods to validate/parse them into entities, as well as saving and fetching them.
+ */
 @Service
 public class PollAnswersService {
   private final IPollAnswerJpaRepository pollAnswerJpaRepository;

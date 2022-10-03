@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/**
+ * API controller for operations with music genres.
+ */
 @RestController
 @RequestMapping("/v1/music_genres")
 public class MusicGenresController {

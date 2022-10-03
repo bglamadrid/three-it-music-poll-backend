@@ -8,6 +8,10 @@ import org.springframework.stereotype.Service;
 
 import java.util.stream.Stream;
 
+/**
+ * Main API logic service for operating with music genres.
+ * Provides methods to fetch them only (as they are not meant to be altered).
+ */
 @Service
 public class MusicGenresService {
   private final IMusicGenreJpaRepository musicGenreJpaRepository;
@@ -17,6 +21,10 @@ public class MusicGenresService {
     this.musicGenreJpaRepository = musicGenreJpaRepository;
   }
 
+  /**
+   * Fetches all music genres stored in the database in a streamable pipeline.
+   * @return A streamable collection that emits all of the music genres, in serializable POJO format.
+   */
   public Stream<MusicGenre> getMusicGenres() {
     return musicGenreJpaRepository.findAll()
         .stream()
