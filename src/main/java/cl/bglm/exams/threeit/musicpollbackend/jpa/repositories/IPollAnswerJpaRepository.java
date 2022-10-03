@@ -5,6 +5,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+/**
+ * JPA repository for poll answers table. Only provides methods for data fetching and creation.
+ */
 @Repository
 public interface IPollAnswerJpaRepository
   extends org.springframework.data.repository.Repository<JpaPollAnswer, Long> {
