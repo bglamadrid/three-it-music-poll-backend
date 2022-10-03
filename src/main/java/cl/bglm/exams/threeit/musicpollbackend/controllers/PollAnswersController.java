@@ -13,6 +13,7 @@ import java.util.Optional;
 /**
  * API controller for operations with poll answers.
  */
+@CrossOrigin
 @RestController
 @RequestMapping("/v1/poll_answers")
 public class PollAnswersController {
