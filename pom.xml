@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>cl.bglm.exams.threeit</groupId>
 	<artifactId>music-poll-backend</artifactId>
-	<version>0.4.0-SNAPSHOT</version>
+	<version>0.4.1-SNAPSHOT</version>
 	<name>music-poll-backend</name>
 	<description>Backend for &amp;quot;music poll&amp;quot; application exam</description>
 	<properties>

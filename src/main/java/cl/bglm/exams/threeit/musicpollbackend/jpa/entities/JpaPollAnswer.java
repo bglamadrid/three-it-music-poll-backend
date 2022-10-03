@@ -8,7 +8,7 @@ import lombok.Setter;
 import javax.persistence.*;
 
 /**
- * Entity class for poll answers.
+ * Entity class for poll answers. Its 'mail' field has an identifying, unique key constraint.
  */
 @Entity
 @Table(name = "poll_answers")
@@ -22,7 +22,7 @@ public class JpaPollAnswer {
   @Column(name = "poll_answer_id", nullable = false)
   private Long id;
 
-  @Column(name = "poll_answer_mail", length = 100, nullable = false)
+  @Column(name = "poll_answer_mail", length = 100, nullable = false, unique = true)
   private String mail;
 
   @ManyToOne(cascade = CascadeType.REFRESH, optional = false)
