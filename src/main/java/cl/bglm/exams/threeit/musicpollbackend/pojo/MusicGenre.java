@@ -1,6 +1,6 @@
 package cl.bglm.exams.threeit.musicpollbackend.pojo;
 
-import com.fasterxml.jackson.annotation.JsonAlias;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,6 +12,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public final class MusicGenre {
-  @JsonAlias("music_genre_name")
+  @JsonProperty("music_genre_name")
   private String name;
 }
