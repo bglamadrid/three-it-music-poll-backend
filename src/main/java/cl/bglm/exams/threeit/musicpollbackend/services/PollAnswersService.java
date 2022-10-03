@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.Optional;
+import java.util.stream.Stream;
 
 @Service
 public class PollAnswersService {
@@ -50,6 +51,16 @@ public class PollAnswersService {
   @Transactional
   public void saveAnswer(JpaPollAnswer entity) throws RuntimeException {
     pollAnswerJpaRepository.save(entity);
+  }
+
+  /**
+   * Fetches all poll answers stored in the database in a streamable pipeline.
+   * @return A streamable collection that emits all of the poll answers, in serializable POJO format.
+   */
+  public Stream<PollAnswer> getPollAnswers() throws RuntimeException {
+    return pollAnswerJpaRepository.findAll()
+        .stream()
+        .map(jpaPollAnswer -> new PollAnswer(jpaPollAnswer.getMail(), jpaPollAnswer.getMusic_genre().getName()));
   }
 
 
