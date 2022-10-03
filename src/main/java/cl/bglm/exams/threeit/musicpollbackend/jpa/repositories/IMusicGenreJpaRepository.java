@@ -15,4 +15,6 @@ public interface IMusicGenreJpaRepository
 
   List<JpaMusicGenre> findAll();
 
+  Optional<JpaMusicGenre> findByName(String name);
+
 }
