@@ -32,7 +32,7 @@ public class PollAnswersController {
   }
 
   @PostMapping
-  public ResponseEntity<PollAnswer> save(@RequestBody PollAnswer pollAnswer) throws RuntimeException {
+  public ResponseEntity<PollAnswer> savePollAnswer(@RequestBody PollAnswer pollAnswer) throws RuntimeException {
     Optional<JpaPollAnswer> jpaPollAnswer = pollAnswersService.validateAnswer(pollAnswer);
     if (jpaPollAnswer.isPresent()) {
       pollAnswersService.saveAnswer(jpaPollAnswer.get());
